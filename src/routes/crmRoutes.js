@@ -1,5 +1,3 @@
-import req from "express/lib/request";
-
 const routes = (app) => {
     app.route('/contact')
         .get((req, res, next) => {
@@ -13,7 +11,7 @@ const routes = (app) => {
 
         .post((req, res) =>
             res.send('POST request successful!'))
-
+ 
     app.route('contact/:contactID')
         .put((req, res) =>
             res.send('PUT request successful!'))
